@@ -1,0 +1,33 @@
+----------------------------
+ENGINE
+----------------------------
+
+Projects:
+
+[ ] 2D UFO Tutorial
+[ ] 2D Roguelike Tutorial
+[ ] Space Shooter Tutorial
+[ ] Making an "Angry Birds" style game (Mini-projects)
+[ ] 2D Catch Game (Mini-projects)
+[ ] Creating a Basic Platformer Game (Mini-projects)
+
+Topics:
+
+[ ] 2D Game Creation
+[ ] Scripting
+[ ] Best Practices
+[ ] Physics
+[ ] Audio
+[ ] Animation
+[ ] User Interface
+[ ] Navigation
+[ ] Tips
+
+----------------------------
+SERVICES & PRODUCTION
+----------------------------
+
+[ ] Could Build
+[ ] Developer Advice
+[ ] Game Performance Reporting
+[ ] Production
