@@ -4,7 +4,7 @@ ENGINE
 
 Projects:
 
-[ ] 2D UFO Tutorial
+[x] 2D UFO Tutorial
 [ ] 2D Roguelike Tutorial
 [ ] Space Shooter Tutorial
 [ ] Making an "Angry Birds" style game (Mini-projects)
