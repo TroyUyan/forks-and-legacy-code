@@ -5,11 +5,11 @@ ENGINE
 Projects:
 
 [x] 2D UFO Tutorial
-[ ] 2D Roguelike Tutorial
-[ ] Space Shooter Tutorial
-[ ] Making an "Angry Birds" style game (Mini-projects)
-[ ] 2D Catch Game (Mini-projects)
 [ ] Creating a Basic Platformer Game (Mini-projects)
+[ ] Space Shooter Tutorial
+[ ] 2D Catch Game (Mini-projects)
+[ ] 2D Roguelike Tutorial
+[ ] Making an "Angry Birds" style game (Mini-projects)
 
 Topics:
 
