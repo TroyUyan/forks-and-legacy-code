@@ -1,9 +1,0 @@
-<entries>
-	<!-- Picture to be used in Tutorials dialog box -->
-	<Bitmap>GamePreview.png</Bitmap>
-	<!-- Text to be used in Tutorials dialog box -->
-	<Text>My_First_Game</Text>
-	<!-- GMZ to be used as template -->
-	<GMZ>MyFirstGame.gmz</GMZ>
-	<Parent>Beginner</Parent>
-</entries>
