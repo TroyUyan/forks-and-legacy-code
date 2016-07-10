@@ -39,7 +39,7 @@ From Unity To-do {
 Shaun Spalding {
   [ ] Make your first game!
   [ ] Making a Platformer
-  [ ] GameMaker Tutorials
+  [ ] GameMaker Tutorials Playlist
 }
 
 GameMakerTutorials.com {
@@ -65,6 +65,7 @@ YoYo Games Blog {
 }
 
 Other {
+  [ ] Top Down Zombie Shooter
   [ ] In-game Resolution Control
   [ ] /r/gamemakertutorials
 }
