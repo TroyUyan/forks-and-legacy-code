@@ -32,7 +32,7 @@ GameMaker Studio Tutorials {
 }
 
 From Unity To-do {
-  [ ] Developer Advice
+  [x] Developer Advice
   [ ] Production
 }
 

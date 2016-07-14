@@ -28,6 +28,6 @@ SERVICES & PRODUCTION
 ----------------------------
 
 [ ] Could Build
-[ ] Developer Advice
+[x] Developer Advice
 [ ] Game Performance Reporting
 [ ] Production
