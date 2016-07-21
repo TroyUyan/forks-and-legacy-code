@@ -13,6 +13,7 @@
     <sprite>sprites\spr_paddle</sprite>
     <sprite>sprites\spr_ball</sprite>
     <sprite>sprites\spr_block</sprite>
+    <sprite>sprites\spr_pause</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_main</background>
@@ -22,6 +23,7 @@
     <object>objects\obj_paddle</object>
     <object>objects\obj_ball</object>
     <object>objects\obj_block</object>
+    <object>objects\obj_pause</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
@@ -30,7 +32,7 @@
     <rtf>help.rtf</rtf>
   </help>
   <TutorialState>
-    <IsTutorial>-1</IsTutorial>
+    <IsTutorial>0</IsTutorial>
     <TutorialName>C:\Users\blutank24\AppData\Local\GameMaker-Studio\tutorials\06_Animation\</TutorialName>
     <TutorialPage>0</TutorialPage>
   </TutorialState>
