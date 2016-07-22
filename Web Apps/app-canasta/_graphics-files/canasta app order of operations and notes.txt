@@ -1,0 +1,89 @@
+--------------------------------
+Order of Operations
+(pages and functions)
+--------------------------------
+
+index.php
+- start game, continue game, info/help
+
+help.php or info.php
+- intro?
+- rules that are calculated
+- version of canasta
+- how to use the app (page by page) // have "how to use this page" jquery toggle links on app pages
+- explain cookies and how long they last (2 weeks to mo?)
+
+rules.php
+- teams, players per team, team names // need players per team?? team acts as one hand
+- use the points and meld value rules? // maybe just say default is 5000, but can end the game at a certain round?
+
+standings.php
+- total standings, fun stats, round by round stats
+
+result.php
+- form to submit
+- if numOfTeams >= 3 (display 3rd input set), if numOfTeams = 4, display 4th input set
+
+end.php 
+- if restarts game before it ends // OR also has to be reached after the game ends, allowing user to review standings.php before
+- destory all cookies and back to
+
+winner.php
+- when a team has 5000pts
+- troph icons for podium graphic-type page with final pts and round-wins
+- [ico] Team 1 - 5300pts (+700/-495) - 
+
+feedback.php
+- bugs, comments
+- link displayed in footer with "bug?" comment, after game shown on winner and end pages for feedback
+
+
+Order of Ops
+index - rules - standings - result - .. - standings - result - winner
+      ^ info                            ^ end?                        ^ feedback
+
+
+
+
+--------------------------------
+Variables needed
+(all cookies so can keep for a week + can swap between PHP and JS)
+--------------------------------
+
+gameStarted	// is there a game going, bool
+roundCount	// keep track of round of the game
+
+numOfTeams	// 2, 3 or 4
+
+teamOneName
+teamTwoName
+teamThreeName
+teamFourName // string with inserted value for name
+
+teamOneTotalScore // integer to track total numeric pts
+
+teamOneBonusPts // integer to track total numeric pts (bonus only)
+
+teamOnePenaltyPts // integer to track total numeric pts (penalty only)
+
+teamOneRoundWins // integer to track total rounds won
+
+use arrays for all team data instead of vars? ex:
+teamOne['name',totalscore,bonuspts,penaltyPts]
+
+
+??? How to keep track of round by round scores? multi-dem array? Arrays that can be created after each result submit?
+could just add to roundScores[roundCount - 1] to give an array of 4 numbers (x,x,0,0 if only 2 teams for example)
+
+roundScores =
+[
+	[1230,40,540,700], [1230,40,540,700], [1230,40,540,700]
+]
+
+
+??? How to order teams at the winner page or in round-by-round results if pts data is in an array?
+
+
+???? Round wins, bonus pts, penalty pts all in a big array as well! or at least each has its own array
+
+

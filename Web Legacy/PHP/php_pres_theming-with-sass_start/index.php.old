@@ -1,0 +1,68 @@
+<?php
+	$pagetitle = "";
+	include 'inc/header.inc.php';
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href='css/reset.min.css' rel='stylesheet' type='text/css'>
+	<link href='css/style.css' rel='stylesheet' type='text/css' media="all">
+	<title>Troy Uyan<?php echo "$pagetitle"; ?></title>
+</head>
+<body>
+	<div id="header">
+		<div class="pagewrapper">
+			<div id="titles">
+				<h1>Troy Uyan</h1>
+				<h2 class="titlehide">Web Developer and Designer</h2>
+			</div><!-- end titles -->
+
+			<div>
+				<ul id="navlist">
+					<li><a href="#"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a></li>
+					<li><a href="#"><i class="fa fa-code fa-fw"></i>&nbsp; Portfolio</a></li>
+					<li><a href="#"><i class="fa fa-cloud fa-fw"></i>&nbsp; Experiments</a></li>
+					<li><a href="#"><i class="fa fa-comments fa-fw"></i>&nbsp; Contact</a></li>
+				</ul>
+			</div><!-- end nav -->
+		</div><!--end PW-->
+	</div><!-- end header-->
+
+	<div id="content">
+		
+		<div class="pagewrapper">
+			
+			<h2>Latest News</h2>	
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin at lorem aliquet vulputate. In hendrerit, risus accumsan congue blandit, diam erat molestie ipsum, eget placerat felis lacus a neque. Cras eget enim sit amet arcu elementum imperdiet. Vestibulum dignissim nisl sit amet ipsum fringilla, eget consectetur lacus hendrerit. Nunc blandit in orci bibendum molestie. Mauris sit amet velit tristique lacus suscipit pretium. Fusce sed nunc ut diam placerat tempus. Maecenas at justo et urna imperdiet lobortis. Morbi a gravida mauris. In ligula metus, facilisis at augue vitae, aliquet malesuada sem. Aliquam erat volutpat.</p>
+
+			<h2>About</h2>
+			<p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Etiam sollicitudin at lorem aliquet vulputate. In hendrerit, risus accumsan congue blandit, diam erat molestie ipsum, eget placerat felis lacus a neque. Cras eget enim sit amet arcu elementum imperdiet. Vestibulum dignissim nisl sit amet ipsum fringilla, eget consectetur lacus hendrerit. Nunc blandit in orci bibendum molestie. Mauris sit amet velit tristique lacus suscipit pretium. Fusce sed nunc ut diam placerat tempus. Maecenas at justo et urna imperdiet lobortis. Morbi a gravida mauris. In ligula metus, facilisis at augue vitae, aliquet malesuada sem. Aliquam erat volutpat.</p>
+		
+		</div><!--end PW-->
+	
+	</div><!-- end content -->
+
+
+	<div id="footer">
+		<div class="pagewrapper">
+
+			<ul id="footernav">
+				<li><a href="#"><i class="fa fa-sitemap fa-fw"></i>&nbsp; Sitemap</a></li>
+				<li><a href="#"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a></li>
+				<li><a href="#"><i class="fa fa-code fa-fw"></i>&nbsp; Portfolio</a></li>
+				<li><a href="#"><i class="fa fa-cloud fa-fw"></i>&nbsp; Experiments</a></li>
+				<li><a href="#"><i class="fa fa-comments fa-fw"></i>&nbsp; Contact</a></li>
+				<li><a href="#"><i class="fa fa-legal fa-fw"></i>&nbsp; Legal</a></li>
+			</ul>
+
+			<p class="text-center">&copy; 2013-2014 Troy Uyan</p>
+			
+		</div><!--end PW-->
+	</div><!-- end footer -->
+
+</body>
+</html>

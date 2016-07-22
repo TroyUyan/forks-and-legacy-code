@@ -1,0 +1,115 @@
+apps page to top-level nav?
+
+prevent directory listings (htacess article in email)
+
+sub navs on portfolio, exper, about all need to be changed to something else because they look awful on small response, make into little stroke-only buttons maybe?
+
+404 and other error pages, has a sitemap
+
+sitemap page? social icon in footer of the dom tree icon as the link?
+
+pictures and headers in portfolio and experiments need to be links as well!!
++ give them a class or something for response with pictures in port and experis.. also about page pic
+
+about page > interests section? or remove from sub-nav
+
+play with a 2-col layout for portfolio and experiments
+
+need something for sub-navs? I.e like a function that outputs how it is now but then a triggers something at a small view port to be a vertical nav so its nicer on responsive.
+
+favicon, header bg with "TU" and U is main blue
+
+remove .php from URLs? htaccess in email or web>learning>apache notes, can also look on the /wp site
+
+++ contact form ++
+email processor script
++ form val plugin for form!
+
+
+++ portfolio ++
+- PHP app case
+- Canasta app case
+- Racing calc case needs more content in v2 section?
+- VA site case
+- elite care case (site, investor portal, web stats, video)
+- CDHL case
+- TU.com case (unction based design examples and yatta yatta)
+- Sonshine case?
+- GP winner set case // move to experiments?
+- The Source documentary case
+- game covers case (gallery with section by section details explained)
+- photog case (fancybox gal, titles, alt/captions, etc) // move to experiments?
+- keep shulnak case? if not, comment dont delete
+
+
+++ experiments ++
+- f1 champ display, some kind of JS library, animations, graphs, etc.
+- css history parrallx
+- sim racing skins (split R07 and AC?)
+- TMS graphics case
+- GD+ (CMS logos, RiT CSGO bracket)
+
+
+
+chrome css animations in nav test
+browser reflow + needs to use animations not transitions (http://stackoverflow.com/questions/17754561/chrome-css-3-transition-not-smooth)
+
+
+///////////// EMAIL processor example from app-canasta ///////
+
+	<?php 
+
+		if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
+			
+			// init post data
+			$name = $_POST['name'];
+			$email = $_POST['email'];
+			$comments = $_POST['comments'];
+
+			// create the email body
+			$msgBody = "Canasta Scoring App Feedback\n\r";
+			$msgBody .= "From: " . $name . "\n\r";
+			$msgBody .= "Email: " . $email . "\n\r";
+			$msgBody .= "Comments:\n\r" . $comments;
+
+			// word-wrap the body
+			$msgBody = wordwrap($msgBody,70,"\r\n");
+
+			// send the email (to, subj, message, headers)
+			mail("admin@troyuyan.com", "Canasta App Feedback Form", $msgBody, "From: {$email}");
+
+			// submitted msg
+			echo "<h3 class=\"greenheader\">Thank you!</h3>";
+			echo '<a href="index.php" class="bigbutton greenbutton" tabindex="1">Return to App</a>';
+
+ 		// end if-posted
+		}	else { 
+		// else, if not posted, display form
+		// end php
+		?>
+
+	<form action="feedback.php" method="post" id="feedbackform" class="bumper">
+		<p>
+			<label for="name">Your Name</label><br>
+			<input type="text" name="name" id="name" class="required" title="Please enter your name." placeholder="Your name here."><br>
+		</p>
+
+		<p class="bumper">
+			<label for="email">Your Email</label><br>
+			<input type="email" name="email" id="email" class="required" title="Please enter a return email address." placeholder="This way I can get back to you."><br>
+		</p>
+
+		<p class="bumper">
+			<label for="comments">Your Feedback</label><br>
+			<textarea name="comments" id="comments" cols="30" rows="7" class="required" title="Please leave some feedback." placeholder="Good or bad, please send it along!"></textarea><br>
+		</p>
+
+		<p>
+			<input type="submit" value="Send Feedback" class="green button">
+		</p>
+	</form>
+
+	<?php
+		// resume php
+		} // end if posted-else
+	?>

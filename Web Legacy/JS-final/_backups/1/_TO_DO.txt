@@ -1,0 +1,26 @@
+Universal::
+jQ menu - http://www.smartmenus.org/
++/- Font Size Buttons - in footer?
+
+Use PHP includes 
+
+Main Pages::
+Form val page
+Photo gallery with FancyBox
+AJAX requests page
+Highcharts (Chess or Racing stats?)
+
+
+
+
+If Time::
+RSS feed page
+Dashboard of news
+Google Maps
+
+
+
+
+
+
+

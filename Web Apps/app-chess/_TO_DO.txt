@@ -1,0 +1,23 @@
+Icons to "White to Move" status, on change swap the images
+do something for the name tags as well, like a clock icon or something
+
+highlighted color in css
+
+board colors in css
+have a theme picker!!!!! wooohooo
+board, notation, even a highlight color?
+grey,black,lazer blue highlight
+
+style for FEN, copy to clip board?
+style for PGN, copy to clip board?
+
+
+hide/show header/footer
+
+start from notated position (FEN) input box in header
+
+take back a move?
+
+name tags and edit name feature
+
+figure out how to launch a new game.

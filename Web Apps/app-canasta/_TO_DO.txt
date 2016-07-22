@@ -1,0 +1,40 @@
+ALL:
+make all div#bumpers over headers and paras just be classes of those headers and paras instead of a whole div just for it
+
+
+live preview/demo page:
+ of standings page? link on index and about.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REDIRECTS REVISIT:
+index.php
+new.php
+standings.php
+results.php
+
+	Game Started = 0:
+[x] standings.php to new.php
+[x] results.php to new.php
+
+	Game Started = 1:
+[x] index.php to standings.php
+[x] new.php to standings.php
+
+	Game Over = 1:
+[x] results.php to standings.php

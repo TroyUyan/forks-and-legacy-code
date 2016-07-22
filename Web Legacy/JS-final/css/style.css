@@ -1,0 +1,99 @@
+body, html {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 1.15em;
+	color:#333;
+}
+
+.clear {
+	clear:both;
+}
+
+h1,h2,h3,h4,h5,h6,strong {
+	font-weight: 700;
+	color:#333;
+}
+
+h1 {
+	text-shadow: 2px 0px 2px rgba(150, 150, 150, .75);
+}
+
+p {
+	font-size: 1em;
+}
+
+#pagewrapper {
+	width:950px;
+	margin:0 auto;
+}
+
+.title-alt {
+	color: #1E9AED;
+}
+
+#main-menu {
+	position:relative;
+	z-index:9999;
+	width:auto;
+}
+#main-menu ul {
+	width:12em;
+}
+
+#content a, #content a:link, #content a:visited, #content a:active {
+	text-decoration: none;
+	color:#05c;
+}
+
+#content a:hover, #content a:focus {
+	color:#444;
+}
+
+.error {
+	clear: both;
+	color: #f30;
+	font-size: 0.9em;
+}
+
+input, select {
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+
+input.error, select.error {
+	border: 1px solid #f30;
+}
+
+input[type=text], input[type=submit], select {
+	padding: 10px;
+	width:200px;
+}
+
+label.error, input[type=text], select {
+	display: block;
+	clear: both;
+}
+
+input[type=submit]:hover {
+	background-color: #4f4;
+	cursor: pointer;
+}
+
+.picture {
+	border:3px solid lightgrey;
+	margin: 10px 3px;
+}
+
+.picture:hover {
+	border: 3px solid #1E9AED;
+}
+
+.taken {
+	color: #f30;
+	font-size: 1.1em;
+}
+
+.free {
+	color: #197b30;
+	font-size: 1.1em;
+}
