@@ -1,3 +1,3 @@
 # Forks and Legacy Code
 
-Nothing interesting to see here... Just forks from other GitHub projects, old personal projects, and game development tutorials.
+Nothing interesting to see here... Just forks from other GitHub projects and old personal projects / code.
