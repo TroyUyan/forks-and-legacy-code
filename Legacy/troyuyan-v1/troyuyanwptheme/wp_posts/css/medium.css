@@ -1,0 +1,13 @@
+/* nav */
+#main-nav-small {
+  display: none; }
+
+#extrasubnav {
+  display: none; }
+
+#main-nav-med {
+  display: block; }
+
+@media only screen and (min-width: 815px) {
+  #extrasubnav {
+    display: inline; } }

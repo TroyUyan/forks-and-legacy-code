@@ -1,0 +1,221 @@
+/*
+Theme Name: Elite Care
+Description: A <a href='http://codex.wordpress.org/Child_Themes'>Child Theme</a> for the Enfold Wordpress Theme. If you plan to do a lot of file modifications we recommend to use this Theme instead of the original Theme. Updating wil be much easier then.
+Version: 1.0
+Author: Voyager Web Solutions
+Author URI: http://voyagerwebsolutions.com/
+Template: enfold
+*/
+
+
+
+/* Have fun adding your style here :) - PS: At all times this file should contain a comment or a rule, otherwise opera might act buggy :( */
+
+/* General Custom CSS */
+@font-face {
+    font-family: MuseoSlab;
+    src: url(Museo_Slab_500.otf);
+	font-weight:100;
+}
+body {background-color:#000; font-family:MuseoSlab, sans-serif; font-weight:100;}
+body p {font-weight:100;}
+h1, h2, h3, h4, h5 {font-family:MuseoSlab, sans-serif; color:#3c2309;}
+
+.content{ padding-top: 0px; padding-bottom: 0px; padding-left:0px; padding-right:0px;}
+
+
+a.campus{
+position:relative;
+margin:1em;
+
+cursor: pointer;
+width: 200px; /* set width of image container */
+height: 200px; /* set height of image container */
+float: left;}
+
+a.campus img{
+position:absolute;
+left:0;
+top:0;
+width: 100%;
+height: 100%;
+-moz-transition: all 1.2s ease; /* enable transition */
+-webkit-transition: all 1.2s ease;
+-o-transition: all 1.2s ease;
+-ms-transition: all 1.2s ease;
+transition: all 1.2s ease;
+z-index: 2;
+clip: rect(0,200px,200px,0); /* clip values should be rect(0,image_width,image_height,0) */
+}
+
+
+a.campus img:nth-of-type(2){ /* hide "after" image beneath "before" so it's initially out of view */
+z-index: 1;
+}
+
+
+a.campus:hover img:nth-of-type(1){ /* clip "before" image to reveal "after" */
+clip: rect(0,0,200px,0); /* clip values should be rect(0,0,image_height,0) */
+opacity: 0;
+}
+
+
+ 
+ 
+#invporimgset{
+	width: 100%; text-align: center;
+}
+
+#invporimgset .image-overlay {
+ visibility: hidden;
+ }
+
+.vboarder {border-right:1px solid #333;border-left:1px solid #333;} 
+
+/* Contact/Tour Button */
+#menu-item-1668 {
+	background-color: #3C2309;
+	border:10px solid #3C2309;
+	border-left: 6px;
+	border-right:6px;
+	border-radius: 4px;
+	height: 40px;
+	margin-top: 24px;
+	vertical-align: middle;
+  -webkit-transition: all 500ms;
+     -moz-transition: all 500ms;
+      -ms-transition: all 500ms;
+       -o-transition: all 500ms;
+          transition: all 500ms;
+}
+
+#menu-item-1668:hover {
+	background-color: #301D00; /*261300*/
+	border:10px solid #301D00;
+	border-left: 6px;
+	border-right:6px;
+  -webkit-transition: all 500ms;
+     -moz-transition: all 500ms;
+      -ms-transition: all 500ms;
+       -o-transition: all 500ms;
+          transition: all 500ms;
+}
+
+#menu-item-1668 a {
+	margin-top: -35px;
+	vertical-align: middle;
+	color:#999;
+  -webkit-transition: all 500ms;
+     -moz-transition: all 500ms;
+      -ms-transition: all 500ms;
+       -o-transition: all 500ms;
+          transition: all 500ms;
+}
+
+#menu-item-1668 a:hover {
+	color:#fff;
+  -webkit-transition: all 500ms;
+     -moz-transition: all 500ms;
+      -ms-transition: all 500ms;
+       -o-transition: all 500ms;
+          transition: all 500ms;
+}
+
+ 
+ /*form styles*/
+.span6 {width:45%; float:left;margin-right:2%;}
+form ol { list-style-type: none; margin-left: 0; }
+form li { padding: 5px; }
+form label { font-size: 12px; line-heigh: 1; margin: 0; font-weight: 700; }
+.wpcf7 input[type="text"], .wpcf7 textarea, .wpcf7 input[type="email"], .wpcf7 input[type="tel"] { margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; height: 30px; }
+.wpcf7 textarea { height: 120px; }
+.wpcf7-list-item input[type="checkbox"] { margin: 0 5px 0 0; }
+.wpcf7-list-item-label { display: inline-block; margin-top: 6px; }
+.first {margin-left: 0px; clear:left;}
+span.wpcf7-list-item {
+    margin-left: 0.5em;
+}
+.wpcf7-list-item {
+margin:0; padding:0;
+}
+.wpcf7-radio {margin-left:-24px;}
+.clean_form ul li p {margin:0;}
+
+	.clean_form{}
+	
+	.clean_form ul{
+		list-style:none;
+		padding:0;
+		margin:0;
+		padding-right:10px;
+		
+		}
+		.clean_form ul li{
+			padding-bottom:10px;}
+			.clean_form ul li p{
+				color:#3c2405;
+				padding-left:39px;}
+	.clean_form .span6{
+		margin-left:5px;}
+		
+		.clean_form .wpcf7-list-item-label{
+			display:none;
+			}
+	.clean_form h3{
+		color:#afc769;
+		font-size:25px;
+		font-weight:500;
+		}
+		.clean_form h4{
+		color:#afc769;
+		font-size:14px;
+		font-weight:normal;
+		text-transform:uppercase;
+		}
+		
+		.clean_form h4 span{
+			color:#ae9c87;
+			font-size:12px;
+			font-family:Arial, Helvetica, sans-serif;
+			padding-right:13px;
+			text-decoration:underline;
+			
+			}
+		
+	.clean_form .wpcf7-form-control{
+		position:relative;
+		top:-2px;
+		float:left;}
+.clean_form #frm-submit{
+	float:left;
+	margin:0 auto;
+	margin-bottom:20px;
+	}
+
+/*
+Desktop Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the desktop view of your site */
+
+@media only screen and (min-width: 768px) {
+  /* Add your Desktop Styles here */
+
+  
+
+}
+
+
+
+/*
+Mobile Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the Mobile and Tablet Portrait view */
+
+@media only screen and (max-width: 767px) {
+  /* Add your Mobile Styles here */
+  
+  /*form styles*/
+ .span6 {width:100%}
+
+}
+

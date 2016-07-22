@@ -1,0 +1,226 @@
+// Reset
+@import 'reset.min';
+
+// Font
+$font: 'Roboto', sans-serif; 
+// Styles: 300, 500
+
+// Colors
+$blue: #1f5374;
+$green: #b1d34b;
+$black: #231f20;
+$grey: #8693a9;
+$white: #fff;
+
+// Unset Reset
+h1 {font-size:4.2em;}
+h2 {font-size:3.5em;}
+h3 {font-size:3.0em;}
+h4 {font-size:2.4em;}
+h5 {font-size:1.8em;}
+h6 {font-size:1.4em;}
+h1,h2,h3,h4,h5,h6,ol,ul {padding:6px 0;}
+
+
+ul {list-style-type: circle;list-position: inside;padding-left:16px;}
+ol {list-style-type: decimal;list-position: inside;padding-left:16px;}
+
+p, ol, ul {font-size:1em;line-height:1.5;}
+
+p, blockquote {padding:10px 0;line-height:1.5;}
+
+// Utility
+.floatl {float:left;}
+.floatr {float:right;}
+.clear {clear:both;}
+.center {text-align:center;}
+
+// Slides: Content Height
+.whiteslide {background-color:$white;color:$black;padding: 16px 0px;max-width:1100px;margin:0 auto;}
+.greyslide  {background-color:$grey ;color:$white;padding: 16px 0px;max-width:1100px;margin:0 auto;}
+.blackslide {background-color:$black;color:$white;padding: 16px 0px;max-width:1100px;margin:0 auto;}
+.blueslide  {background-color:$blue; color:$white;padding: 16px 0px;max-width:1100px;margin:0 auto;}
+
+// Bars and Dividers
+.bar-green {height:30px;background-color:$green;width:100%;}
+.bar-blue {height:30px;background-color:$blue;width:100%;}
+.bar-grey {height:30px;background-color:$grey;width:100%;}
+.thick {height:45px;}
+.divider-blue {height:12px;background-color:$blue;width:100%;}
+.divider-green {height:12px;background-color:$green;width:100%;}
+
+// Stylesheet
+html, body {
+	font-family: $font;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	font-size:16px;
+	font-weight:300;
+	color:$black;
+  background-image: url('http://test1.vaporarmour.com/wp-content/uploads/2014/08/carbon_fibre.png');
+}
+
+blockquote {font-size: 1.4em;width:90%;margin:12px auto 0;padding:10px;clear:both;
+  border-radius:10px;border: 5px solid $grey;}
+blockquote { position: relative; border: 5px solid $grey;color:$white;
+  background: #475d75; /* Old browsers */
+/*   background: -moz-linear-gradient(top,  #475d75 0%, #7e8a9d 70%, #475d75 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#475d75), color-stop(70%,#7e8a9d), color-stop(100%,#475d75));
+  background: -webkit-linear-gradient(top,  #475d75 0%,#7e8a9d 70%,#475d75 100%);
+  background: -o-linear-gradient(top,  #475d75 0%,#7e8a9d 70%,#475d75 100%);
+  background: -ms-linear-gradient(top,  #475d75 0%,#7e8a9d 70%,#475d75 100%);
+  background: linear-gradient(to bottom,  #475d75 0%,#7e8a9d 70%,#475d75 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#475d75', endColorstr='#475d75',GradientType=0 ); */
+}
+blockquote:after, blockquote:before { top: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
+blockquote:after { border-color: rgba(136, 183, 213, 0); border-top-color: #475d75; border-width: 30px; margin-left: -30px; }
+blockquote:before { border-color: rgba(255, 255, 255, 0); border-top-color: $grey; border-width: 37px; margin-left: -37px; }
+cite {font-size:0.6em;width:100%;clear:both;}
+cite:before {content: "";}
+.cite {padding-top:38px;text-align:center;font-size:0.8em;font-weight:500;}
+strong {font-weight:500;}
+
+.pagewrapper {
+  margin: 0 auto;
+  min-width: 380px;
+  max-width: 1100px;
+  padding:0px 16px;
+}
+
+.featuredimage {
+  
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  background-color:$white;
+
+  img {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    min-width: 380px;
+  }
+}
+
+a, a:link, a:visited, a:active {
+    text-decoration: none;
+    color: $white;
+  }
+
+a:hover {
+    color: $grey;
+  }
+
+// Header
+#header {
+  background-color: $white;
+  text-align: center;
+
+  img {
+    margin: 30px auto 16px;
+    max-width: 80%;
+  }
+
+  #mainnav {
+    padding-bottom: 16px;
+  }
+
+  #mainnav li {
+    display: inline-block;
+    line-height: 2em;
+    list-style-type: none;
+    font-size: 1.2em;
+    padding-right: 16px;
+  }
+  #mainnav li:last-of-type {
+    padding-right: 0px;
+  }
+
+  #mainnav li a, a:link, a:visited, a:active {
+    text-decoration: none;
+    color: $grey;
+  }
+  #mainnav li a:hover {
+    color: $black;
+  }
+
+} // End header
+
+#sliderarea {
+  height: 200px;
+  background-color: gainsboro;
+}
+
+// footer
+#footer {
+  background-color: $blue;
+  color:$white;
+} // End footer
+
+
+
+
+
+
+
+
+
+
+
+///// Breakpoints /////
+// Medium
+@media (min-width: 800px) {
+  .col-2 {
+    float: left;
+    width: 46%;
+    margin: 0 2%;
+  }
+
+  .col-3 {
+    float: left;
+    width: 28%;
+    margin: 0 2%;
+  }
+
+  .col-33 {
+    float: left;
+    width: 30%;
+    margin: 0 1.5%;
+  }
+
+  .col-66 {
+    float: left;
+    width: 60%;
+    margin: 0 3%;
+  }
+} // end MQ
+
+// Full Size
+@media (min-width: 1100px) {
+  #header {
+
+    height: 160px;
+
+    img {
+      margin-top: 30px;
+      padding: 10px;
+      max-width: 80%;
+      float: left;
+    }
+
+    #mainnav {
+      padding-top:58px;
+    }
+
+    #mainnav li {
+      display: inline-block;
+      line-height: 2em;
+      list-style-type: none;
+      font-size: 1.2em;
+      padding-right: 16px;
+    }
+
+  } // End header
+} // end MQ

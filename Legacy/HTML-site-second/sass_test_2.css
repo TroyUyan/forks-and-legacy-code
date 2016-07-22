@@ -1,0 +1,24 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333333;
+}
+
+.seven {
+  color: #333333;
+  background-color: #004433;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+body #inbed {
+  color: #004433;
+}
+
+#inbed {
+  color: #333333;
+  padding: 0 0 0 0;
+}
+
+#jack {
+  color: #004433;
+}

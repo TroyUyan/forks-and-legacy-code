@@ -1,0 +1,40 @@
+HTML CODE:
+
+<div id="showmenu">Click Here</div>
+<div class="menu" style="display: none;">
+    <ul>
+        <li>Button1</li>
+        <li>Button2</li>
+        <li>Button3</li>
+    </ul>
+</div>
+
+<div id="showmenu2">Click Here</div>
+<div class="menu2" style="display: none;">
+    <ul>
+        <li>Button1</li>
+        <li>Button2</li>
+        <li>Button3</li>
+    </ul>
+</div>
+
+
+
+
+
+
+JS CODE:
+
+    $(document).ready(function () {
+        $('#showmenu').click(function () {
+            $('.menu').slideToggle("fast");
+        });
+    });
+
+    $(document).ready(function () {
+        $('#showmenu2').click(function () {
+            $('.menu2').slideToggle("fast");
+        });
+    });
+
+

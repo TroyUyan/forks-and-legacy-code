@@ -1,0 +1,356 @@
+// Reset
+@import 'reset.min';
+
+// Font
+$font: 'Open Sans Condensed', Arial, sans-serif;
+
+// Unset Reset
+h1 {font-size:5em;}
+h2 {font-size:4em;}
+h3 {font-size:3.4em;}
+h4 {font-size:2.9em;}
+h5 {font-size:2.5em;}
+h6 {font-size:2.2em;}
+p, ol, ul {font-size:1.8em;}
+ul {list-style-type: circle;list-position: inside;}
+ol {list-style-type: decimal;list-position: inside;}
+h1,h2,h3,h4,h5,h6,ol,ul {padding:6px 0;}
+p, blockquote {padding:10px 0;line-height:1.2;}
+ul, ol {padding-left: 35px;line-height:1.2;}
+blockquote {font-size: 2.5em;/* min-width:400px */;clear:both;}
+cite {font-size:0.6em;}
+abbr {border-bottom:1px dotted #000;cursor:help;}
+
+// Paragraph Spacing
+#content p:last-of-type {margin-bottom:1em;}
+#header, #footer {p {margin-bottom:0;}}
+
+// Colors
+$main: #197bce; 	// Blue
+$black: #1c1c1c; 	// Header/footer BG
+$dark: #666666;		// Very dark grey
+$dgrey: #c4c4c4;	// Dark grey (Header font color)
+$lgrey: #e4e4e4;	// Light grey (block qoute bg color)
+$white: #fff;			// True White (main slide bg)
+$green: #17a62b;  // Light green (live app link)
+$red: #cb1b1b;		// Red (errors)
+
+// Functions
+@mixin transition($type, $time) {
+  -webkit-transition: $type $time;
+     -moz-transition: $type $time;
+      -ms-transition: $type $time;
+       -o-transition: $type $time;
+          transition: $type $time;
+} // @include transition(all,1s) __ @include transition(padding,5s)
+
+@mixin boxshadow($prop) {
+  -webkit-box-shadow: $prop;
+     -moz-box-shadow: $prop;
+      -ms-box-shadow: $prop;
+       -o-box-shadow: $prop;
+          box-shadow: $prop;
+}
+
+// Utility
+.floatl {float:left;}
+.floatr {float:right;}
+.clear {clear:both;}
+.center {text-align:center;}
+.main {color:$main;@include transition(all,500ms)}
+.bumper {padding-top:24px}
+.lbumper {padding-top:36px}
+.smallclear {clear:both;}
+
+// Slides: Content Height
+.whiteslide {display:block;clear:both;width:100%;height:100%;background-color:$white;color:$black;}
+.greyslide  {display:block;clear:both;width:100%;height:100%;background-color:$lgrey;color:$black;}
+.blackslide {display:block;clear:both;width:100%;height:100%;background-color:$black;color:$dgrey;}
+// Slides: Full Viewport Height
+.whiteslidevh {display:block;clear:both;width:100%;height:100vh;vertical-align:center;background-color:$white;color:$black;}
+.greyslidevh  {display:block;clear:both;width:100%;height:100vh;vertical-align:center;background-color:$lgrey;color:$black;}
+.blackslidevh {display:block;clear:both;width:100%;height:100vh;vertical-align:center;background-color:$black;color:$dgrey;}
+
+// Stylesheet
+html, body {
+	font-family: $font;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	font-size:16px;
+	font-weight:300;
+	color:$black;
+	background-color: $black;
+}
+
+strong {font-weight:600;}
+em {font-style:italic;}
+blockquote {background-color:$lgrey;text-align:center;color:$black;text-transform:lowercase;
+i {color:$dgrey;font-size:.8em;}}
+cite {
+	clear:both;
+	font-weight: 700;
+	color: $dark;
+	text-transform:none;
+}
+cite:before {
+		content: "- ";
+}
+.pagetitle {
+	text-align:center;
+	color:$main;
+	font-size:.72em;
+	text-transform:lowercase;
+	font-style:italic;
+	padding-bottom:16px;
+}
+
+.pagewrapper {
+	/* min-width:400px; */
+	max-width:1000px;
+	margin:0 auto;
+	padding:20px 15px;
+}
+
+.col {
+	h1,h2,h3,h4,h5,h6 {
+		text-align: center;
+	}
+}
+
+.col:nth-of-type(1) {
+	clear:both;
+}
+
+#header, #footer {
+	width: 100%;
+	color:$dgrey;
+	background-color:$black;
+	h1,h2 {
+		color:$dgrey;
+	}
+	li {
+		color:$dgrey;padding:none;display:inline-block;padding:0 5px;
+	}
+	ul {
+		list-style-type: none;padding-left:0;padding-top:20px;list-position:outside;
+	}
+}
+
+#header {
+	text-align:center;
+
+	a, a:link, a:visited, a:active {
+		color: $dgrey;
+		text-decoration:none;
+		@include transition(all,500ms)
+	}
+
+	a:hover, a:focus {
+		color:$main;
+		padding:1.5px;
+		@include transition(all,500ms)
+	}
+
+	.titlelink {
+		a, a:link, a:visited, a:active {
+			color: $dgrey;
+			text-decoration:none;
+			@include transition(all,500ms)
+		}
+
+		a:hover, a:focus {
+			color:$main;
+			@include transition(all,500ms)
+		}
+
+	}
+	.titlelink:hover, .titlelink:focus {
+		.main {
+				color: $dgrey;
+				@include transition(all,500ms)
+			}
+		}
+}
+
+#content {
+	margin-bottom:0;
+	background-color: $white;
+
+	// Main links
+	a, a:link, a:visited, a:active {
+		color: $main;
+		text-decoration:none;
+		@include transition(all,500ms)
+	}
+
+	a:hover, a:focus {
+		color:$black;
+		@include transition(all,500ms)
+	}
+
+	// Live app links
+	a.live, a.live:link, a.live:visited, a.live:active {
+		color: $green;
+		text-decoration:none;
+		@include transition(all,500ms)
+	}
+
+	a.live:hover, a.live:focus {
+		color: $black;
+		@include transition(all,500ms)
+	}
+
+	.live {color:$green}
+
+	img {
+		margin:1em;
+		display: block;
+	}
+
+	img.center {display:block;margin-left:auto;margin-right:auto;}
+
+	.blackslide, .blackslidevh {
+		a, a:link, a:visited, a:active {
+			color: $main;
+			text-decoration:none;
+			@include transition(all,500ms)
+		}
+
+		a:hover, a:focus {
+			color:$dgrey;
+			@include transition(all,500ms)
+		}
+	}
+}
+
+input[type=text],input[type=url],input[type=tel],input[type=number],input[type=email],select,textarea {
+	font-family: $font;
+	width:90%;
+	max-width:90%;
+	font-size:inherit;
+	padding: 15px;
+	border: 5px solid $lgrey;
+	@include boxshadow(inset 3px 5px 5px $dgrey);
+}
+
+input[type=text]:focus,input[type=url]:focus,input[type=tel]:focus,input[type=number]:focus,input[type=email]:focus, select:focus,textarea:focus {
+	border: 5px solid $main;
+	@include boxshadow(inset 3px 5px 5px $dgrey);
+}
+
+textarea {
+	height:11em;
+	resize: none;
+}
+
+input[type=submit] {
+	font-family: $font;
+	font-size: inherit;
+	width:40%;
+	padding: 15px;
+	border: 5px solid $lgrey;
+	@include transition(all,500ms)
+}
+
+input[type=submit]:hover,input[type=submit]:focus {
+	background-color:$main;
+	color:$white;
+	cursor:pointer;
+	@include transition(all,500ms)
+}
+
+// Inputs and labels with errors
+input.error,select.error,textarea.error {
+	border: 5px solid $red;
+}
+label.error {
+	color: $red;
+	font-size:0.85em;
+}
+
+#footer {
+
+	text-align:center;
+	padding-top:30px;
+
+	a, a:link, a:visited, a:active {
+		color: $dgrey;
+		text-decoration:none;
+		@include transition(all,500ms)
+	}
+
+	a:hover, a:focus {
+		color:$main;
+		@include transition(all,500ms)
+	}
+
+	.toplink {
+		// float:right;
+		display:block;
+		color:#fff;
+		text-align: center;
+		width:120px;
+		background-color:$main;
+		height:45px;
+		margin:-70px;
+		margin-left: auto;
+		margin-right: auto;
+		p {
+			position: absolute;
+			margin-top: -6px;
+		}
+		a {width:100%;height:100%;padding:6px;}
+		@include transition(all,500ms)
+	}
+	.toplink:hover {
+		background-color:#fff;
+		@include transition(all,500ms)
+	}
+
+	#footernav {
+		font-size:0.85em;
+		margin-top: 70px;
+		padding-bottom:16px; 
+	}
+
+	.social {
+		font-size: 2.5em;
+	}
+
+	.copyinfo {
+		font-size:1.5em;
+		margin-top: 14px;
+	}
+}
+
+// Small Breakpoint
+@media (min-width:500px) {
+	.smallclear {clear:none;}
+} //end MQ
+
+// Main Breakpoint
+@media (min-width:800px) {
+
+	#header {
+		text-align:left;
+		h1 {
+			float:left;
+			width: 100px;
+		}
+		#nav {
+			padding-top:12px;
+			font-size: 1.3em;
+			text-align: right;
+			max-width: 510px;
+			float:right;
+		}
+	}
+
+	#content .col {
+		width: 46%;
+		margin:0 2%;
+		float: left;
+	}
+} //end MQ

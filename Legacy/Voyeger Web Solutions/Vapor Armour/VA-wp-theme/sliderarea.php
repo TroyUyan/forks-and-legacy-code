@@ -1,0 +1,3 @@
+	
+		<?php putRevSlider("homeslider","homepage") ?>
+	

@@ -1,0 +1,300 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.packery {
+  background: #FDD;
+  background: hsla(45, 100%, 40%, 0.2);
+}
+/* clearfix */
+.packery:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+.item {
+  width: 160px;
+  height: 160px;
+  float: left;
+  background: #C09;
+  border: 4px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.3);
+}
+.item:hover {
+  border-color: white;
+  cursor: move;
+}
+.item.w2 { width:   160px; }
+.item.h2 { height:  160px; }
+.item.h4 { height: 320px; }
+.item.w4 { width:  320px; }
+
+.item.is-dragging,
+.item.is-positioning-post-drag {
+  border-color: white;
+  z-index: 2;
+}
+
+/* Set-Based Styles */
+#container img {
+	padding: 0;
+	margin: 0 auto;
+}
+
+#container .small img {
+	width: 60%;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#container p {
+	font-weight: 700;
+}
+
+#container .big p {
+	margin: 0;
+	padding: 0;
+	font-size: 4em;
+}
+
+#container .med p {
+	margin: 60px 0 15px;
+	padding: 0;
+	font-size: 2.2em;
+}
+
+#container .small p {
+	margin: 6px 0 8px;
+	padding: 0;
+}
+
+
+.item {text-align: center;}
+
+/* Teams */
+.brazil {
+  background-color: #ffd659;
+  border: 4px solid #008558;
+}
+.brazil p {
+	color:#008558;
+}
+.germany {
+	background-color: #fff;
+	border: 4px solid #d71920;
+}
+.germany p {
+	color:#666;
+}
+.italy {
+	background-color: #202c90;
+	border: 4px solid #fff;
+}
+.italy p {
+	color:#d1c789;
+}
+.argentina {
+	background-color: #fff;
+	border: 4px solid #75c5f0;
+}
+.argentina p {
+	color:#75c5f0;
+}
+.uruguay {
+	background-color: #fff;
+	border: 4px solid #cca300;
+}
+.uruguay p {
+	color:#368fc0;
+}
+.france {
+	background-color: #091b53;
+	border: 4px solid #fe0000;
+}
+.france p {
+	color:#fff;
+}
+.england {
+	background-color: #2b57ac;
+	border: 4px solid #fff;
+}
+.england p {
+	color:#fff;
+}
+.spain {
+	background-color: #ffb400;
+	border: 4px solid #ca161e;
+}
+.spain p {
+	margin: 60px 0 5px !important;
+	color:#ca161e;
+}
+.usa {
+	background-color: #fff;
+	border: 4px solid #cd3f5d;
+}
+.usa p {
+	color:#2e4e82;
+}
+.russia {
+	background-color: #f62222;
+	border: 4px solid #1c18ea;
+}
+.russia p {
+	color:#fff;
+}
+.portugal {
+	background-color: #111;
+	border: 4px solid #339933;
+}
+.portugal p {
+	color:#ff4444;
+}
+.netherlands {
+	background-color: #f46529;
+	border: 4px solid #333;
+}
+.netherlands p {
+	color:#fff;
+}
+.nigeria {
+	background-color: #128a5a;
+	border: 4px solid #f3f3f3;
+}
+.nigeria p {
+	color:#f3f3f3;
+}
+.mexico {
+	background-color: #157255;
+	border: 4px solid #ce2d35;
+}
+.mexico p {
+	color:#fff;
+}
+.korea {
+	background-color: #fff;
+	border: 4px solid #456ab4;
+}
+.korea p {
+	color:#ff3c3c;
+}
+.japan {
+	background-color: #fff;
+	border: 4px solid #c82647;
+}
+.japan p {
+	color:#c82647;
+}
+.ivorycoast {
+	background-color: #ee8616;
+	border: 4px solid #1eaa72;
+}
+.ivorycoast p {
+	color:#fff;
+}
+.iran {
+	background-color: #e23434;
+	border: 4px solid #74be85;
+}
+.iran p {
+	color:#fff;
+}
+.croatia {
+	background-color: #cb2224;
+	border: 4px solid #fff;
+}
+.croatia p {
+	color:#fff;
+}
+.honduras {
+	background-color: #0444ac;
+	border: 4px solid #fff;
+}
+.honduras p {
+	color:#fff;
+}
+.greece {
+	background-color: #1f1f9e;
+	border: 4px solid #fff;
+}
+.greece p {
+	color:#fff;
+}
+.ghana {
+	background-color: #fff;
+	border: 4px solid #f3cc27;
+}
+.ghana p {
+	color:#000;
+}
+.ecuador {
+	background-color: #ecc934;
+	border: 4px solid #c52537;
+}
+.ecuador p {
+	color:#093b8b;
+}
+.columbia {
+	background-color: #ecc934;
+	border: 4px solid #093b8b;
+}
+.columbia p {
+	color:#093b8b;
+}
+.algeria {
+	background-color: #0b8840;
+	border: 4px solid #f12f2f;
+}
+.algeria p {
+	color:#fff;
+}
+.costarica {
+	background-color: #c81e31;
+	border: 4px solid #001d56;
+}
+.costarica p {
+	color:#fff;
+}
+.chile {
+	background-color: #da3535;
+	border: 4px solid #002577;
+}
+.chile p {
+	color:#fff;
+}
+.cameroon {
+	background-color: #0b7a60;
+	border: 4px solid #fdde5a;
+}
+.cameroon p {
+	color:#fdde5a;
+}
+.switzerland {
+	background-color: #cb0d0d;
+	border: 4px solid #fff;
+}
+.switzerland p {
+	color:#fff;
+}
+.belgium {
+	background-color: #ae0000;
+	border: 4px solid #ffff3d;
+}
+.belgium p {
+	color:#ffff3d;
+}
+.bosnia {
+	background-color: #0e0e9a;
+	border: 4px solid #ffd941;
+}
+.bosnia p {
+	color:#fff;
+}
+.australia {
+	background-color: #ffd941;
+	border: 4px solid #1c8a06;
+}
+.australia p {
+	color:#1c8a06;
+}

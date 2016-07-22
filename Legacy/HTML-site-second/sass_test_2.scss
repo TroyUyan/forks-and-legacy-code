@@ -1,0 +1,22 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$zero: #043;
+$setzero: 0 0 0 0;
+    
+body {
+  font: 100% $font-stack;
+  color: $primary-color;}
+
+.seven {color: $primary-color;
+    background-color: $zero;
+    margin: $setzero;
+    padding: $setzero;}
+
+body {
+    #inbed {color: $zero;}
+}
+
+#inbed {color: $primary-color;
+    padding: $setzero;}
+
+#jack {color: $zero;}
