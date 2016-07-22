@@ -1,0 +1,5 @@
+Smooth finish to the text slogan on the right's scroll path.
+Maybe footer has an upwards shadow so the text goes behind the shadow??
+
+
+Z-index a new anchor/div to act as the click-link for the header. Banner is no longer a link because of z-index to be behind the nav.

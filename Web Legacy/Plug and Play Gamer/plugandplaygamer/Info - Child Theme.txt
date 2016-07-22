@@ -1,0 +1,3 @@
+This is a child theme for the "generatepress" theme directory.
+
+This must be installed to /wp-content/themes after "generatepress" theme already exists.

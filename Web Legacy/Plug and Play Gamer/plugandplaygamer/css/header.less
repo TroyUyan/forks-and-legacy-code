@@ -1,0 +1,44 @@
+#masthead {
+  background-image: url("img/gun_metal.png");
+  z-index: -1; // behind nav so nav shadow shows up
+}
+
+.inside-header {
+  padding:20px; //reduce whitespace in header
+}
+
+.site-branding {
+  margin-top: -13px; // tighten title to logo
+
+  .main-title a {
+    color: @light-grey;
+  }
+}
+
+#plugandplay-textgraphic {
+  position: fixed;
+  top: 217px;
+  margin-left: 1110px;
+  //margin-left: 535px;
+}
+
+@media (min-width: @small) {
+  #main-logo {
+    float:left;
+    margin-right:15px;
+  }
+  .site-branding {
+    float: left;
+    margin-top: 0;
+    padding-top: 12px; // align title with logo
+    .site-description {
+      padding-left: 2px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  #plugandplay-textgraphic {
+    display: block; // display text graphic on right
+  }
+}

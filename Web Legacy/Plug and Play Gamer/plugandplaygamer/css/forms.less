@@ -1,0 +1,85 @@
+.ccf-form-wrapper .ccf-theme-light {
+
+  input[type="text"], select, textarea {
+    &:hover {
+      border-color: @green;
+    }
+    &:focus {
+      background-color: @white;
+      border-color: @green;
+      color: @black;
+    }
+  }
+
+  input.ccf-submit-button {
+    &:hover {
+      background: #00cb00;
+      background: -moz-linear-gradient(top,  #00cb00 0%, #58a554 100%);
+      background: -webkit-linear-gradient(top,  #00cb00 0%,#58a554 100%);
+      background: linear-gradient(to bottom,  #00cb00 0%,#58a554 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cb00', endColorstr='#58a554',GradientType=0 );
+    }
+  }
+}
+
+// Plug In (Question of the Week) form on sidebar
+aside#custom-contact-forms-2 {
+  div.ccf-form-wrapper {
+    margin:0;
+    .form-title {
+      padding:0;
+    }
+  }
+}
+
+// Plug In (via email) form on sidebar
+#blog_subscription-2 {
+  h4 {
+    font-size: 24px;
+    margin: 0;
+  }
+}
+#subscribe-email {
+  input[type="email"] {
+    padding: 8px;
+    border-radius: 4px;
+    &:hover {
+      border-color: @green;
+    }
+    &:focus {
+      background-color: @white;
+      border-color: @green;
+      color: @black;
+    }
+  }
+}
+#subscribe-submit {
+  input[type="submit"] {
+    padding: 8px 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: @black;
+    
+    background-color: #f0f0f0;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f0f0f0),to(#fcfcfc));
+    background-image: -webkit-linear-gradient(top,#f0f0f0,#fcfcfc);
+    background-image: -moz-linear-gradient(top,#f0f0f0,#fcfcfc);
+    background-image: -ms-linear-gradient(top,#f0f0f0,#fcfcfc);
+    background-image: -o-linear-gradient(top,#f0f0f0,#fcfcfc);
+    background-image: linear-gradient(to bottom,#f0f0f0,#fcfcfc);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f0f0f0, endColorstr=#fcfcfc);
+
+    &:hover {
+      background: #00cb00;
+      background: -moz-linear-gradient(top,  #00cb00 0%, #58a554 100%);
+      background: -webkit-linear-gradient(top,  #00cb00 0%,#58a554 100%);
+      background: linear-gradient(to bottom,  #00cb00 0%,#58a554 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cb00', endColorstr='#58a554',GradientType=0 );
+    }
+  }
+}
+
+// scale captcha
+.ccf-recaptcha-wrapper {
+  overflow:hidden;
+}
